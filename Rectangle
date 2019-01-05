@@ -1,41 +1,33 @@
 import math
 class Rectangle():
-    def __init__(self, a, b, c, d):
+    def __init__(self, a, b):
         self.a = a
         self.b = b
-        self.c = c
-        self.d = d
-    
     def field(self):
-        if self.a == self.b and self.c == self.d:
-            f = self.a * self.c
-            print(f)
-        if self.a == self.c and self.b == self.d:
+        if self.a <= 0 or self.b <= 0:
+            print("The sides have to be greater than 0")
+        else:
             f = self.a * self.b
-            print(p)
-            
+            print("Field is equal " + str(f))
     def circum(self):
-        l = self.a + self.b + self.c + self.d
-        print(l)
-    
+        if self.a <= 0 or self.b <= 0:
+            print("The sides have to be greater than 0")
+        else:
+            l = 2 * self.a + 2 * self.b
+            print("Circumference is equal " + str(l))
     def diagonal(self):
-        if self.a == self.b and self.c == self.d:
-            d = math.sqrt((self.a)^2 + (self.c)^2)
-            print(d)
-        if self.a == self.c and self.b == self.d:
-            d = math.sqrt((self.a)^2 + (self.b)^2)
-            print(d)
-            
-    def tuple(self):
-        if self.a == self.b and self.c == self.d:
-            p = self.a * self.c
-            print("Field is equal" + str(p))
-            d = math.sqrt((self.a)^2 + (self.c)^2)
-            print("Diagonal is equal" + str(d))
-        if self.a == self.c and self.b == self.d:
-            p = self.a * self.b
-            print("Field is equal" + str(p))
-            d = math.sqrt((self.a)^2 + (self.b)^2)
-            print("Diagonal is equal" + str(d))
-        l = self.a + self.b + self.c + self.d
-        print("Circumference is equal" + str(l))
+        if self.a <= 0 or self.b <= 0:
+            print("The sides have to be greater than 0")
+        else:
+            d = math.sqrt(self.a^2 + self.b^2)
+            print("The diagonal is equal " + str(d))
+    def tople(self):
+        if self.a <= 0 or self.b <= 0:
+            print("The sides have to be greater than 0")
+        else:
+            f = self.a * self.b
+            print("Field is equal " + str(f))
+            l = 2 * self.a + 2 * self.b
+            print("Circumference is equal " + str(l))
+            d = math.sqrt(self.a ^ 2 + self.b ^ 2)
+            print("The diagonal is equal " + str(d))
