@@ -1,0 +1,41 @@
+import math
+class Rectangle():
+    def __init__(self, a, b, c, d):
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+    
+    def field(self):
+        if self.a == self.b and self.c == self.d:
+            f = self.a * self.c
+            print(f)
+        if self.a == self.c and self.b == self.d:
+            f = self.a * self.b
+            print(p)
+            
+    def circum(self):
+        l = self.a + self.b + self.c + self.d
+        print(l)
+    
+    def diagonal(self):
+        if self.a == self.b and self.c == self.d:
+            d = math.sqrt((self.a)^2 + (self.c)^2)
+            print(d)
+        if self.a == self.c and self.b == self.d:
+            d = math.sqrt((self.a)^2 + (self.b)^2)
+            print(d)
+            
+    def tuple(self):
+        if self.a == self.b and self.c == self.d:
+            p = self.a * self.c
+            print("Field is equal" + str(p))
+            d = math.sqrt((self.a)^2 + (self.c)^2)
+            print("Diagonal is equal" + str(d))
+        if self.a == self.c and self.b == self.d:
+            p = self.a * self.b
+            print("Field is equal" + str(p))
+            d = math.sqrt((self.a)^2 + (self.b)^2)
+            print("Diagonal is equal" + str(d))
+        l = self.a + self.b + self.c + self.d
+        print("Circumference is equal" + str(l))
